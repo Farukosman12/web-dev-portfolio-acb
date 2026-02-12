@@ -3,9 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>web dev portfolio acb</title>
+    <style>
+        /* part---1 */
+
+        .nav-header{
+            max-width: 1600px;
+            height: 92px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            background-color: black;
+            flex-wrap: wrap;
+
+        }
+        .nav-title{
+            font-size: 24px;
+            width: 219px;
+            height: 32px;
+            border: 1px solid aqua;
+
+        }
+        .nav-title-color{
+            color: magenta;
+        }
+        .nav-list{
+            display: flex;
+            text-decoration: none;
+            gap: 32px;
+            list-style: none;
+            border: 1px solid aqua;
+            width: 218px;
+            height: 19px;
+        }
+        ul li a{
+            text-decoration: none;
+            color: white;
+            border: 1px solid aqua;
+        }
+        .btn-primay{
+            border: 1px solid aqua;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            gap: 5px;
+            color: white;
+            /* border: none; */
+            padding: 16px 24px;
+            border-radius: 25px;
+            /* width: 135px; */
+            /* height: 44px; */
+            /* margin-top: 30px; */
+            background-image: linear-gradient(to top right, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+        }
+
+        /* banner part-2 */
+
+        .section-about{
+            background-image: url('../web-dev-portfolio acb/images/hero-bg.png'), url('../web-dev-portfolio acb/images/microphone.png');
+            max-width: 1600px;
+            height: 720px;
+            /* background-position: center, 100% 50%; */
+            /* background-repeat: no-repeat, no-repeat; */
+        }
+        .secttion-banner-title{
+            text-align: center;
+            color: white;
+    
+        }
+        .nav-banner-img1{
+            width:350px;
+            height: 350px;
+            margin-top: 101px;
+            border: 1px solid aqua;
+            
+        }
+        .nav-banner-img2{
+            width: 200px;
+            height: 200px;
+            border: 1px solid aqua;
+            margin-top: -350px;
+            margin-bottom: 100px;
+            
+        }
+        .btn-primary-1{
+            border-radius: 25px;
+            font-size: 20px;
+            padding: 12px 10px;
+            color: white;
+            background-image: linear-gradient(to top right, #F7E93F 0%, #F9797A 26%, #FB09B4 51%, #9100F8 100%); */
+        }
+        .btn-primary-img{
+            width: 17px;
+            height: 17px;
+        }
+        .btn-primary-2{
+            color: #00ff88;
+            border-radius: 25px;
+            font-size: 20px;
+            background-color: rgb(15, 15, 15);
+            padding: 12px 10px;
+            gap: 5px;
+            border: 1px solid #00ff88;
+            /* background-image: linear-gradient(to top right, #F7E93F 0%, #F9797A 26%, #FB09B4 51%, #9100F8 100%); */
+        }
+    </style>
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="nav-header">
+            <h3 class="nav-title">Tech<span class="nav-title-color">Wave</span></h3>
+            <div>
+                <ul class="nav-list">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Episodes</a></li>
+                    <li><a href="">Host</a></li>
+                </ul>
+            </div>
+            <button class="btn-primay">Subscribe<img src="../web-dev-portfolio acb/images/ArrowRight.png" alt=""></button>
+        </nav>
+    </header>
+    <main>
+        <section class="section-about">
+            <section class="section-banner">
+                <nav class="secttion-banner-title">
+                    <img class="nav-banner-img1" src="../web-dev-portfolio acb/images/hero-circle.png" alt="">
+                    <div class="nav-title-des1">
+                        <img class="nav-banner-img2" src="../web-dev-portfolio acb/images/microphone.png" alt="">
+                        <!-- <button class="btn-primary-1">NEW</button> -->
+                        <div class="nav-title-des">
+                            <h2>TechWave</h2>
+                            <p>Your daily dose of tech insights, producitivity hacks, and persomal growth.</p>
+                            <button class="btn-primary-1"><img class="btn-primary-img" src="../web-dev-portfolio acb/images/spotify.png" alt=""> Listen On Spotify</button>
+                            <button class="btn-primary-2"><img class="btn-primary-img" src="../web-dev-portfolio acb/images/message.png" alt=""> Subscribe</button>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
