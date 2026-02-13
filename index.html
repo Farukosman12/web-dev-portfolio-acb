@@ -60,7 +60,7 @@
 
         /* banner part-2 */
 
-        .section-about{
+        .section-container{
             background-image: url('../web-dev-portfolio acb/images/hero-bg.png'), url('../web-dev-portfolio acb/images/microphone.png');
             max-width: 1600px;
             height: 720px;
@@ -108,6 +108,51 @@
             border: 1px solid #00ff88;
             /* background-image: linear-gradient(to top right, #F7E93F 0%, #F9797A 26%, #FB09B4 51%, #9100F8 100%); */
         }
+        @media screen and (max-width: 576px) {
+            .nav-header{
+                display: grid;
+                flex-direction: column;
+            }
+        }
+        .container-1{
+            width: 1600px;
+            height: 646px;
+            background-color: black;
+        }
+        .container-3{
+            display: flex;
+            text-align: center;
+        }
+        .container-abouts{
+            width: 1200px;
+            height: 222px;
+            border: 1px solid aqua;
+            color: #FFFFFF;
+            margin: 50px 200px 160px 200px;
+        }
+        .container-title{
+            font-size: 46px;
+            color: white;
+            /* border: 1px solid aqua; */
+            width: 1200px;
+            height: 58px;
+            
+        }
+        .container-user{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid aqua;
+            color: #00ff88;
+            width: 1200px;
+            height: 94px;
+            gap: 100px;
+            margin-top: 120px;
+        }
+        .con-description{
+            color: #FFFFFF;
+        }
     </style>
 </head>
 <body>
@@ -125,7 +170,7 @@
         </nav>
     </header>
     <main>
-        <section class="section-about">
+        <section class="section-container">
             <section class="section-banner">
                 <nav class="secttion-banner-title">
                     <img class="nav-banner-img1" src="../web-dev-portfolio acb/images/hero-circle.png" alt="">
@@ -142,6 +187,38 @@
                 </nav>
             </section>
         </section>
+        <section class="container-1">
+            <section class="container-2">
+                <nav class="container-3">
+                    <div class="container-abouts">
+                        <h1 class="container-title">About The Podcast</h1>
+                        <p>TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+                            <br>We break down complex tech topics into easily digestible insights, explore productivity strategies that actually work,<br>
+                            and share stories of personal growth from industry leaders.</p>
+                        <p>Join thousands of young professionals who are using TechWave to enhance their tech knowledge and personal development.</p>
+                        <div class="container-user">
+                            <div>
+                                <h1>150K+</h1>
+                                <p class="con-description">MONTHLY LISTENERS</p>
+                            </div>
+                            <div>
+                                <h1>200+</h1>
+                                <p class="con-description">EPISODES PUBLISHED</p>
+                            </div>
+                            <div>
+                                <h1>4.9*</h1>
+                                <p class="con-description">AVERAGE RATING</p>
+                            </div>
+                            <div>
+                                <h1>50+</h1>
+                                <p class="con-description">INDUSTRY EXPERTS</p>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </section>
+
     </main>
     <footer>
 
